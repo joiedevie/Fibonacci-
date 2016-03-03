@@ -1,0 +1,17 @@
+def f(n):
+     if n<=0:
+          return 0
+     elif n <=2:
+          return 1
+     else:
+          seq = (f(n-1)+f(n-2))
+          return(seq)
+def main():
+     term = int(input("Please enter the required term: "))
+     if term <= 0:
+          print("Please a positive interger.")
+     else:
+          for i in range(term):
+               print(f(i))
+main()
+                
